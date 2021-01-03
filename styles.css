@@ -1,0 +1,142 @@
+*{
+    padding: 0;
+    margin: 0; 
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #ffffff;
+    color: black; 
+} 
+
+
+/* Universal container for site */
+.container{
+
+    max-width: 100%;
+    text-align: center;
+    margin: auto;
+}
+
+/* Modifying the presentation of column */
+
+
+.column {
+    float: left;
+    width: 50%; 
+}
+
+.column p{
+    padding: 10px 75px; 
+    text-align: center; 
+}
+
+.row:after{
+    clear: both;
+    content: "";
+    display: table; 
+}
+
+/*Intro & Heading */
+
+.intro{
+    padding: 20px; 
+}
+
+.intro h1{
+    font-size: 55px; 
+}
+
+.intro h3{
+    font-size: 32px; 
+}
+
+.heading{
+    background: url("CLF-Image-One.jpg") no-repeat center center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 100%;
+    height: 1000px; 
+}
+.heading h1{
+    color: white;
+    font-size: 3rem; 
+    position: absolute;
+    float: left; 
+    background-color: transparent; 
+
+}
+
+.heading h3{
+    color: white;
+    font-size: 2rem; 
+    position: absolute;
+    float: left; 
+    padding-top: 75px; 
+    left: 0%; 
+    background-color: transparent; 
+
+}
+
+/* Top Banner */
+
+.banner-top h1{
+    background-color: #E0E0DB; 
+    padding: 50px; 
+    color: black;
+}
+
+/* Middle Image */
+.image-middle img{
+    display: block;
+    margin-top: 20px; 
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px; 
+    width: 75%;
+}
+
+/* Image Row One  */
+
+
+.image-row-one .row .column img{
+    margin: 100px 10px 10px 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%;
+}
+
+
+/* Features */
+
+.features{
+    padding-top: 50px; 
+    background-color: #E0E0DB;
+}
+
+.features .row{
+    background-color: #E0E0DB;
+}
+
+.features .row .column h2{
+    font-size: 36px;  
+    background-color: #E0E0DB;
+}
+
+
+.features .row .column p{
+    padding-top: 15px; 
+    font-size: 28px; 
+    background-color: #E0E0DB;
+}
+
+/* Making the site responsive */
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+
+
+    [class*="column"] {
+      width: 100%;
+    }
+  }
